@@ -1,0 +1,8 @@
+int mySqrt(int x){
+    int c=0,m;
+    for(int i=1;x>=0;i=i+2){
+        x=x-i;
+        c++;
+    }
+    return c-1;
+}

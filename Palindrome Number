@@ -1,0 +1,14 @@
+bool isPalindrome(int x){
+    int n=x,s=0;
+    if(x<0){
+        return false;
+    }
+    else{
+        while(x!=0){
+            s=(s*10)+(x%10);
+            x=x/10;
+        }
+        //printf("%d",s);
+        return(s==n)?true:false;
+    }
+}

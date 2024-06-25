@@ -1,0 +1,10 @@
+bool isPerfectSquare(int num){
+    double m=sqrt(num);
+    if(m-(int)m==0.0)
+    {
+        return true;
+    }
+    else{
+        return false;
+    }
+}

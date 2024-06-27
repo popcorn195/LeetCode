@@ -1,0 +1,15 @@
+int strStr(char* haystack, char* needle){
+    // Remove newline character from haystack if present
+    haystack[strcspn(haystack, "\n")] = '\0';
+    // Remove newline character from needle if present
+    needle[strcspn(needle, "\n")] = '\0';
+    char *p;
+    p = strstr(haystack, needle);
+    if(p != NULL){
+        int c = p - haystack;
+        return c;
+    }
+    else{
+        return -1;
+    }
+}
